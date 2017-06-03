@@ -4491,8 +4491,21 @@ a.post-thumbnail:hover {
   	margin-right: 3%;
   	margin-bottom: 30px;
   	position: relative;
+  	border:1px #f2f2f2 solid;
  }
 
+.project-cover:hover {
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    box-shadow: 0 26px 40px -24px rgba(52, 70, 90, 0.4);
+    -webkit-box-shadow: 0 26px 40px -24px rgba(52, 70, 90, 0.4);
+    -moz-box-shadow: 0 26px 40px -24px rgba(52, 70, 90, 0.4);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+ }
 
 
 .post-cover-thumbnail,
@@ -4559,6 +4572,11 @@ a.post-thumbnail:hover {
 	text-align: center;
 	text-transform: uppercase;
 	/* margin: 10px auto; */
+	border:none;
+}
+
+.project-cover .entry-meta {
+	border:none;
 }
 
 .project-cover-meta .cat-links {
