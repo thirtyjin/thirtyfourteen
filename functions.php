@@ -201,6 +201,20 @@ function twentyfourteen_widgets_init() {
 add_action( 'widgets_init', 'twentyfourteen_widgets_init' );
 
 
+/**
+ * Remove Version Number From CSS & JS in Wordpress Theme.
+ * https://www.codementor.io/tips/8369241717/remove-version-number-from-css-js-in-wordpress-theme
+ * @since thirtyjin Fourteen 1.0
+ */
+function jl_remove_wp_ver_css_js( $src ) {
+	if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) )
+	    $src = remove_query_arg( 'ver', $src );
+	return $src;
+}
+add_filter( 'style_loader_src', 'jl_remove_wp_ver_css_js', 9999 );
+//add_filter( 'script_loader_src', 'jl_remove_wp_ver_css_js', 9999 );
+
+
 
 /**
  * Enqueue scripts and styles for the front end.
