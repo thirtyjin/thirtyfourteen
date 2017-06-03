@@ -4492,19 +4492,22 @@ a.post-thumbnail:hover {
   	margin-bottom: 30px;
   	position: relative;
   	border:1px #f2f2f2 solid;
+  	
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
  }
 
 .project-cover:hover {
     transform: translateY(-6px);
     -webkit-transform: translateY(-6px);
     -moz-transform: translateY(-6px);
+
     box-shadow: 0 26px 40px -24px rgba(52, 70, 90, 0.4);
     -webkit-box-shadow: 0 26px 40px -24px rgba(52, 70, 90, 0.4);
     -moz-box-shadow: 0 26px 40px -24px rgba(52, 70, 90, 0.4);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+
  }
 
 
@@ -4516,8 +4519,9 @@ a.post-thumbnail:hover {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* max-width: 300px; */
 }
+
+
 
 .post-cover-thumbnail{
 	padding-top: 0;
@@ -4547,9 +4551,8 @@ a.post-thumbnail:hover {
 }
 
 .project-cover-title {
-	margin: 20px 0;
-	text-transform: uppercase;
 	text-align: center;
+	padding: 1em 1em .5em;
 }
 
 
@@ -4577,6 +4580,8 @@ a.post-thumbnail:hover {
 
 .project-cover .entry-meta {
 	border:none;
+	padding: .75em 1em 1.5em;
+	margin: 0 auto;
 }
 
 .project-cover-meta .cat-links {
