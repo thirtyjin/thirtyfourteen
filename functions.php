@@ -234,11 +234,19 @@ function twentyfourteen_scripts() {
 	wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
 
 	// less.js
-    //wp_register_style( 'less_style', get_template_directory_uri() . '/style.less', array(), '', '' );
-    //wp_enqueue_style ('less_style');
+  //wp_register_style( 'less_style', get_template_directory_uri() . '/style.less', array(), '', '' );
+  //wp_enqueue_style ('less_style');
 	//wp_register_script ( 'less_js', '//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js', false , false, false );
 	//wp_enqueue_script ( 'less_js' ); // Enqueueing less.js
 
+
+	// Bootstrap.js
+	wp_register_style( 'bootstrap_style', 'https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), '', '' );
+	wp_enqueue_style ('bootstrap_style');
+	wp_register_script ( 'popper_js', 'https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js', array() , false, false );
+	wp_enqueue_script ( 'popper_js' );
+	wp_register_script ( 'bootstrap_js', 'https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js', array() , false, false );
+	wp_enqueue_script ( 'bootstrap_js' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -518,7 +526,3 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
  */
 
 require_once ('post-type/portfolio-type.php');
-
-
-
-

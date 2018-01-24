@@ -10,12 +10,12 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+<article class="col-sm-12 col-md-12 col-lg-10" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<?php //twentyfourteen_post_thumbnail(); ?>
 
-	<header class="responsive1 entry-header">
-	
+	<header class="entry-header">
+
 		<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -24,24 +24,24 @@
 			endif;
 		?>
 
-	<div class="project-cover-meta entry-meta ">
+	<div class="entry-meta ">
 		<?php  echo get_the_term_list($post->ID, 'project-type', '<span class="cat-links">', ', ','</span>'); ?>
 
 		<?php the_date( 'Y', '<span>', '</span>' ); ?>
-		
+
 		<?php edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</div>
-	
+
 	</header><!-- .entry-header -->
 
 
 
 	<?php if ( is_search() ) : ?>
-	<div class="responsive1 entry-summary">
+	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
-	<div class="responsive1 entry-content">
+	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -58,13 +58,5 @@
 		?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-	
-	<footer class="entry-footer">
-		<div class="entry-meta">
-			<span class="tag-links">
-				<?php the_tags( '', '+', '' ); ?>
-			</span>
-		</div>
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

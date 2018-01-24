@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content-fullwidth container" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -25,12 +25,12 @@ get_header(); ?>
 					// Previous/next post navigation.
 					twentyfourteen_post_nav();
 
-					
+
 				endwhile;
 			?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

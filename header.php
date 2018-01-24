@@ -30,6 +30,20 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 
+
+	<!-- baidu tongji -->
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?8ab92ca2867f4c7be52c6ce61e2eb598";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	<!-- baidu tongji end-->
+
+
 </head>
 
 <body <?php body_class(); ?>>
