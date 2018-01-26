@@ -11,7 +11,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="project-cover" <?php post_class(); ?>>
-	
+
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>">
 		<div class="project-cover-thumb" style="background-image: url(<?php the_post_thumbnail_url(); ?>); ">
 			<?php //twentyfourteen_post_thumbnail(); ?>
@@ -19,7 +19,7 @@
 	</a>
 
 
-	<header class="project-cover-title"> 
+	<header class="project-cover-title">
 
 		<?php
 			if ( is_single() ) :

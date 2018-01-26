@@ -226,6 +226,11 @@ function twentyfourteen_scripts() {
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
 
+
+	// Bootstrap.css
+	wp_register_style( 'bootstrap_style', 'https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), '', '' );
+	wp_enqueue_style ('bootstrap_style');
+
 	// Load our main stylesheet.
 	wp_enqueue_style( 'twentyfourteen-style', get_stylesheet_uri() );
 
@@ -241,8 +246,6 @@ function twentyfourteen_scripts() {
 
 
 	// Bootstrap.js
-	wp_register_style( 'bootstrap_style', 'https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), '', '' );
-	wp_enqueue_style ('bootstrap_style');
 	wp_register_script ( 'popper_js', 'https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js', array() , false, false );
 	wp_enqueue_script ( 'popper_js' );
 	wp_register_script ( 'bootstrap_js', 'https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js', array() , false, false );
