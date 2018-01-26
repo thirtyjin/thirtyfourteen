@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area container">
+		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -27,7 +27,7 @@ get_header(); ?>
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) {
-						
+
 						comments_template();
 					}
 				endwhile;

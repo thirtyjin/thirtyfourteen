@@ -4496,9 +4496,10 @@ a.post-thumbnail:hover {
 
 .project-covers {
 	padding-top: 40px;
-  	z-index: 1;
-  	overflow: hidden;
-  	margin: 0 auto;
+	padding-bottom: 20px;
+	z-index: 1;
+	overflow: hidden;
+	margin: 0 auto;
 }
 
 .project-covers:after {
@@ -4589,7 +4590,7 @@ a.post-thumbnail:hover {
     font-size: inherit;
 }
 .project-cover-title a {
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 300;
 	line-height: 1em;
 }

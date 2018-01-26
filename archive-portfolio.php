@@ -20,7 +20,7 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area container">
-		<div id="content" class="site-content project-covers grid-container" role="main">
+		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-12 project-covers grid-container" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
