@@ -1,7 +1,6 @@
 === Thirty Fourteen ===
 Contributors: the WordPress team
 Requires at least: WordPress 3.6
-Tested up to: WordPress 4.5-trunk
 Stable tag: 1.6
 License: GPLv2 or later
 License URI:

@@ -16,10 +16,9 @@
 
 			<?php get_sidebar( 'footer' ); ?>
 
-			<div class="site-info">
+			<div class="site-info container">
 				<?php do_action( 'twentyfourteen_credits' ); ?>
-				© 2008-2017 <a href="http://thirtyjin.com/">thirtyjin.com</a> All rights reserved.  京ICP备14007437号.  
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfourteen' ) ); ?>"><?php printf( __( 'By %s', 'thirtyfourteen' ), 'WordPress' ); ?></a>
+				© 2008-2017 <a href="http://thirtyjin.com/">thirtyjin.com</a> All rights reserved.  京ICP备14007437号.
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
