@@ -12,9 +12,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php thirtyfourteen_post_thumbnail_title(); ?>
 
-	<header class="entry-header">
+		<header class="entry-header">
+
+		<?php thirtyfourteen_post_thumbnail_title(); ?>
+
 
 		<?php
 
@@ -28,7 +30,7 @@
 		<div class="entry-meta">
 			<?php
 				if ( 'post' == get_post_type() )
-					twentyfourteen_posted_on();	
+					twentyfourteen_posted_on();
 			?>
 
 			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
@@ -36,6 +38,10 @@
 			<?php endif; ?>
 
 			<?php edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+			<span class="tag-links">
+				<?php the_tags( '', '+', '' ); ?>
+			</span>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -62,7 +68,7 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	
+
 	<footer class="entry-footer">
 		<div class="entry-meta">
 			<span class="tag-links">

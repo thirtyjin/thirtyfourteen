@@ -13,8 +13,8 @@ $metadata = wp_get_attachment_metadata();
 get_header();
 ?>
 
-	<section id="primary" class="content-area image-attachment">
-		<div id="content" class="site-content" role="main">
+	<section id="primary" class="content-area container image-attachment">
+		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
 	<?php
 		// Start the Loop.

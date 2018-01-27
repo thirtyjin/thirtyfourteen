@@ -110,12 +110,12 @@ function twentyfourteen_posted_on() {
 	}
 
 	// Set up and print post meta information.
-	printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author">%5$s</a></span></span>',
+	printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span>',
 		esc_url( get_permalink() ),
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		get_the_author()
+		esc_html( get_the_date('Y-m') )
+		//esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		//get_the_author()
 	);
 }
 endif;
@@ -251,16 +251,16 @@ function thirtyfourteen_post_thumbnail_title() {
 	<div class="post-thumbnail">
 	<?php
 		if ( ( ! is_active_sidebar( 'sidebar-2' ) || is_page_template( 'page-templates/full-width.php' ) ) ) {
-			// the_post_thumbnail( 'twentyfourteen-full-width' );
+			the_post_thumbnail( 'twentyfourteen-full-width' );
 		} else {
-			// the_post_thumbnail();
+			the_post_thumbnail();
 			// stop display thumbnail;
 		}
 
 	?>
 	</div>
 
-	<?php 
+	<?php
 	else :
 
 		if ( ! has_post_thumbnail() ) {
@@ -269,16 +269,13 @@ function thirtyfourteen_post_thumbnail_title() {
 		} else { ?>
 
 			<div class="post-cover-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
-				<div class="post-cover-inner-textbox">
+				<div class="post-cover-inner-textbox align-text-bottom">
 					<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
 				</div>
 			</div>
-		<?php 
-		} 
+		<?php
+		}
+
 	endif; // End is_singular()
 }
 endif;
-
-
-
-

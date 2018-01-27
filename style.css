@@ -139,6 +139,7 @@ a:active {
 a:active,
 a:hover {
 	color: #F44336;
+	text-decoration: none;
 }
 
 h1,
@@ -1223,8 +1224,13 @@ a.post-thumbnail:hover {
 	text-transform: uppercase;
 }
 
+.entry-meta span {
+	margin-right: 16px;
+}
+
 .entry-meta a {
 	color: #767676;
+	font-weight: normal;
 }
 
 .entry-meta a:hover {
@@ -1241,7 +1247,7 @@ a.post-thumbnail:hover {
 }
 
 .cat-links a {
-	color: #2b2b2b;
+	/* color: #2b2b2b; */
 }
 
 .cat-links a:hover {
@@ -1259,15 +1265,15 @@ a.post-thumbnail:hover {
 
 .site-content-fullwidth .entry-meta,
 .site-content .entry-meta {
-	background-color: #fff;
+	/* background-color: #fff; */
 	/* margin-bottom: 8px; */
 	margin: 1.5em auto;
 	/* display: inline-block; */
 	width: auto;
-	padding: .75em 2em;
-	border-bottom: .1em solid #ddd;
-	border-top: .1em solid #ddd;
-	text-align: center;
+	padding: 0 0 .75em 0em;
+	border-bottom: .1em dashed #ddd;
+	/* border-top: .1em solid #ddd; */
+	text-align: left;
 	/* clear: both; */
 }
 
@@ -1437,6 +1443,7 @@ a.post-thumbnail:hover {
 	border-radius: 2px;
 	margin: 20px 0;
 	text-transform: uppercase;
+	clear: both;
 }
 
 .entry-content .indent {
@@ -4302,7 +4309,7 @@ a.post-thumbnail:hover {
 	}
 
 	body {
-    	font-size: 1.2500em;
+    	font-size: 1em;
 	}
 
 	.site-content blockquote.alignleft {
@@ -4513,11 +4520,12 @@ a.post-thumbnail:hover {
 .project-cover {
   	/* display: block; */
   	padding: 0px;
-  	border:1px #f2f2f2 solid;
+  	/* border:1px #f2f2f2 solid; */
   	-webkit-transition: all 0.3s ease;
   	-moz-transition: all 0.3s ease;
   	-o-transition: all 0.3s ease;
   	transition: all 0.3s ease;
+  	background: #f9f9f9;
  }
 
 
@@ -4553,14 +4561,17 @@ a.post-thumbnail:hover {
 
 .post-cover-thumbnail{
 	padding-top: 0;
+	position: relative;
 }
 
 .post-cover-inner-textbox {
 	background: rgba(0,0,0,0.35);
 	width: 100%;
-	position: relative;
-	display: block;
-	padding: 5% 0;
+	position: absolute;
+	/* display: block; */
+	padding: 1rem 0;
+	bottom: 0;
+	/* height: 250px; */
 }
 
 .post-cover-inner-textbox .entry-title {
@@ -4579,13 +4590,13 @@ a.post-thumbnail:hover {
 }
 
 .project-cover-title {
-	text-align: center;
+	text-align: left;
 	padding: 1em 1em .5em;
 }
 
 
 .project-cover-title .entry-title {
-    text-align: center;
+    /* text-align: center; */
     margin: 0 auto;
     font-size: inherit;
 }
@@ -4706,6 +4717,6 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 769px) {
 	.post-cover-inner-textbox .entry-title {
-		width: 75%;
+		/* width: 75%; */
 	}
 }
