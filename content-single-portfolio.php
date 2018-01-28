@@ -10,7 +10,7 @@
  */
 ?>
 
-<article class="col-sm-12 col-md-12 col-lg-10" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php //twentyfourteen_post_thumbnail(); ?>
 

@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content-fullwidth container" role="main">
+	<div id="primary" class="content-area container">
+		<div id="content" class="site-content-fullwidth col-sm-12 col-md-12 col-lg-11" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
