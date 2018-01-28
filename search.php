@@ -9,14 +9,16 @@
 
 get_header(); ?>
 
+
+			<header class="page-header">
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h1>
+			</header><!-- .page-header -->
+			
 	<section id="primary" class="content-area container">
 		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h1>
-			</header><!-- .page-header -->
 
 				<?php
 					// Start the Loop.
