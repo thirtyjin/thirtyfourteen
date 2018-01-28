@@ -264,7 +264,7 @@ function thirtyfourteen_post_thumbnail_title() {
 	else :
 
 		if ( ! has_post_thumbnail() ) {
-			the_title( '<header class="entry-header"><h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1></header>' );
+			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			return;
 		} else { ?>
 
