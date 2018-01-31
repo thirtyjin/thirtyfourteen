@@ -959,7 +959,7 @@ span + .edit-link:before,
 /* Search in the header */
 
 .search-toggle {
-	background-color: #F44336;
+	/* background-color: #F44336; */
 	cursor: pointer;
 	float: right;
 	height: 60px;
@@ -2963,6 +2963,7 @@ a.post-thumbnail:hover {
 	/* position: relative; */
 	/* z-index: 3; */
 	margin: 0 auto;
+	padding: 15px 0;
 }
 
 .footer-sidebar {
@@ -2970,7 +2971,8 @@ a.post-thumbnail:hover {
 }
 
 .site-info {
-	padding: 15px 10px;
+	/* padding-top: 15px; */
+	/* padding-bottom: 15px; */
 }
 
 #supplementary + .site-info {
