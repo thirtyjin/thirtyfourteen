@@ -10,11 +10,21 @@
 get_header(); ?>
 
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h1>
-			</header><!-- .page-header -->
-			
+	<header class="page-header">
+
+				<div class="container">
+					<div class="row justify-content-md-center">
+						<div class="col-sm-12 col-md-12 col-lg-10">
+							<h2 class="page-title">
+								<?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?>
+							</h2>
+						</div>
+					</div>
+				</div>
+	</header><!-- .page-header -->
+
 	<section id="primary" class="content-area container">
+		<div class="row">
 		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -43,6 +53,7 @@ get_header(); ?>
 			?>
 
 		</div><!-- #content -->
+		</div>
 	</section><!-- #primary -->
 
 <?php

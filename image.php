@@ -14,6 +14,7 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area container image-attachment">
+		<div class="row">
 		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
 	<?php
@@ -72,6 +73,7 @@ get_header();
 		<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
+	</div>
 	</section><!-- #primary -->
 
 <?php

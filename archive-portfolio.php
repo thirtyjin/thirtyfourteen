@@ -19,6 +19,18 @@
 
 get_header(); ?>
 
+<header class="archive-header">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h2 class="archive-title">
+					Portfolio
+				</h2>
+			</div>
+		</div>
+	</div>
+</header><!-- .archive-header -->
+
 	<section id="primary" class="content-area container">
 		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-12 project-covers grid-container" role="main">
 
@@ -39,8 +51,8 @@ get_header(); ?>
 					endwhile;
 
 				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
+						// If no content, include the "No posts found" template.
+						get_template_part( 'content', 'none' );
 
 				endif;
 			?>
@@ -50,7 +62,6 @@ get_header(); ?>
 			// Previous/next page navigation.
 			twentyfourteen_paging_nav();
 		?>
-
 	</section><!-- #primary -->
 
 <?php

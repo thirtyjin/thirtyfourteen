@@ -32,7 +32,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="project-cover-meta entry-meta ">
-		<?php  echo get_the_term_list($post->ID, 'project-type', '<span class="cat-links">', ' | ','</span>'); ?>
+		<?php  echo get_the_term_list($post->ID, 'project-type', '<span class="cat-links">', ' + ','</span>'); ?>
 
 		<?php the_date( 'Y', '<span>', '</span>' ); ?>
 

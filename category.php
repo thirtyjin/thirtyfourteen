@@ -13,19 +13,27 @@ get_header(); ?>
 
 
 
-<header class="archive-header container-fluid">
-	<h2 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h2>
+<header class="archive-header">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-sm-12 col-md-12 col-lg-10">
+				<h2 class="archive-title">
+					<?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?>
+				</h2>
 
-	<?php
-		// Show an optional term description.
-		$term_description = term_description();
-		if ( ! empty( $term_description ) ) :
-			printf( '<div class="taxonomy-description">%s</div>', $term_description );
-		endif;
-	?>
+				<?php // Show an optional term description.
+					$term_description = term_description();
+					if ( ! empty( $term_description ) ) :
+						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+					endif;
+				?>
+			</div>
+		</div>
+	</div>
 </header><!-- .archive-header -->
 
 	<section id="primary" class="content-area container">
+		<div class="row">
 		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -62,6 +70,7 @@ get_header(); ?>
 				endif;
 			?>
 		</div><!-- #content -->
+		</div>
 	</section><!-- #primary -->
 
 <?php

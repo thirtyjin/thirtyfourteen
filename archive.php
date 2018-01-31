@@ -42,6 +42,7 @@ get_header(); ?>
 
 
 	<section id="primary" class="content-area container">
+		<div class="row">
 		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -68,6 +69,7 @@ get_header(); ?>
 				endif;
 			?>
 		</div><!-- #content -->
+		</div>
 	</section><!-- #primary -->
 
 <?php

@@ -9,27 +9,27 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php thirtyfourteen_post_thumbnail_title(); ?>
 
 	<header class="entry-header">
+		<?php thirtyfourteen_post_thumbnail_title(); ?>
 
 		<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
 				// the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
-			endif; 
+			endif;
 		?>
 
 		<div class="entry-meta">
 
-				<span class="post-format">
-					<a class="entry-format" href="<?php echo esc_url( get_post_format_link( 'video' ) ); ?>"><?php echo get_post_format_string( 'video' ); ?></a>
-				</span>
-			
+				<!-- <span class="post-format">
+					<a class="entry-format" href="<?php //echo esc_url( get_post_format_link( 'video' ) ); ?>"><?php //echo get_post_format_string( 'video' ); ?></a>
+				</span> -->
+
 			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
-				<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
-			
+				<span class="cat-links"><?php echo get_the_category_list( _x( ' + ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
+
 			<?php endif; ?>
 			<?php twentyfourteen_posted_on(); ?>
 

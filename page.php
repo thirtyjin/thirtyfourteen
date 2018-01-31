@@ -21,8 +21,9 @@ get_header(); ?>
 		get_template_part( 'featured-content' );
 	}
 ?>
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area container">
+		<div class="row">
+		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
 			<?php
 				// Start the Loop.
@@ -39,6 +40,7 @@ get_header(); ?>
 			?>
 
 		</div><!-- #content -->
+		</div>
 	</div><!-- #primary -->
 	<?php get_sidebar( 'content' ); ?>
 </div><!-- #main-content -->

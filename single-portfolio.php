@@ -10,6 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area container">
+		<div class="row">
 		<div id="content" class="site-content-fullwidth col-sm-12 col-md-12 col-lg-11" role="main">
 			<?php
 				// Start the Loop.
@@ -29,6 +30,7 @@ get_header(); ?>
 				endwhile;
 			?>
 		</div><!-- #content -->
+		</div>
 	</div><!-- #primary -->
 
 <?php

@@ -11,10 +11,11 @@ get_header(); ?>
 
 
 	<div id="primary" class="content-area container">
+		<div class="row">
 		<div id="content" class="site-content col-sm-12 col-md-12 col-lg-10" role="main">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'twentyfourteen' ); ?></h1>
+			<header class="">
+				<h1 class=""><?php _e( 'Not Found', 'twentyfourteen' ); ?></h1>
 			</header>
 
 			<div class="page-content">
@@ -24,6 +25,7 @@ get_header(); ?>
 			</div><!-- .page-content -->
 
 		</div><!-- #content -->
+		</div>
 	</div><!-- #primary -->
 
 <?php

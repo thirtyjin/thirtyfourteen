@@ -104,7 +104,7 @@ if ( ! function_exists( 'twentyfourteen_posted_on' ) ) :
  *
  * @since Twenty Fourteen 1.0
  */
-function twentyfourteen_posted_on() {
+function twentyfourteen_posted_on() {	
 	if ( is_sticky() && is_home() && ! is_paged() ) {
 		echo '<span class="featured-post">' . __( 'Sticky', 'twentyfourteen' ) . '</span>';
 	}

@@ -9,12 +9,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php thirtyfourteen_post_thumbnail_title(); ?>
 
 	<header class="entry-header">
+		<?php thirtyfourteen_post_thumbnail_title(); ?>
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
 		<div class="entry-meta">
-			<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
+			<span class="cat-links"><?php echo get_the_category_list( _x( ' + ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
 		</div><!-- .entry-meta -->
 		<?php
 			endif;
@@ -27,9 +27,9 @@
 		?>
 
 		<div class="entry-meta">
-			<span class="post-format">
-				<a class="entry-format" href="<?php echo esc_url( get_post_format_link( 'audio' ) ); ?>"><?php echo get_post_format_string( 'audio' ); ?></a>
-			</span>
+			<!-- <span class="post-format">
+				<a class="entry-format" href="<?php //echo esc_url( get_post_format_link( 'audio' ) ); ?>"><?php //echo get_post_format_string( 'audio' ); ?></a>
+			</span> -->
 
 			<?php twentyfourteen_posted_on(); ?>
 
@@ -57,7 +57,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	
+
 	<footer class="entry-footer">
 		<div class="entry-meta">
 			<span class="tag-links">
