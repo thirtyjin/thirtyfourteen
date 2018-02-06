@@ -19,7 +19,7 @@
 
 get_header(); ?>
 
-<header class="archive-header">
+<header class="archive-header header_bg_1">
 	<div class="container">
 		<div class="row justify-content-md-center">
 			<div class="col-sm-12 col-md-12 col-lg-12">
