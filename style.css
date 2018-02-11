@@ -1518,6 +1518,7 @@ a.post-thumbnail:hover {
 	height: 36px;
 	margin-left: -24px;
 	width: 48px;
+	position: absolute;
 }
 
 .hentry .mejs-overlay-button:before {
@@ -4575,7 +4576,7 @@ a.post-thumbnail:hover {
  }
 
 
- .project-cover:first-child {
+.project-cover:first-child {
    grid-column: 1 / span 2;
    grid-row: 1;
  }
@@ -4606,6 +4607,11 @@ a.post-thumbnail:hover {
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 	filter: grayscale(100%);
 }
+
+.project-cover:first-child .project-cover-thumb {
+	-webkit-filter: none; /* Chrome, Safari, Opera */
+	filter: none;
+ }
 
 .post-cover-thumbnail:hover,
 .project-cover-thumb:hover {

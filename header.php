@@ -25,6 +25,14 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/favicons/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicons/favicon.ico">
+
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
