@@ -2520,6 +2520,14 @@ a.post-thumbnail:hover {
 
 /* Secondary */
 
+.blur-on {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	height: 100%;
+}
 .blur-on > *{
 	filter: blur(5px);
 	transition: all ease .8s;
